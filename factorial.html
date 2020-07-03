@@ -1,0 +1,26 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+//console.log(userInput[0]);
+var input = userInput[0];
+function factorial(inputVal){
+    if(inputVal===0 || inputVal===1){
+        return 1;
+    }
+    else{
+        return inputVal*(factorial(inputVal-1));
+    }
+}
+var output = factorial(input);
+console.log(output);
+//end-here
+});
