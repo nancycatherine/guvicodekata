@@ -1,0 +1,18 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+var input = userInput[0].split(" ");
+var principal = input[0]; var interest = input[1]; var time = input[2];
+var simpleInterest = parseFloat(principal*interest*time/100).toFixed(2);
+console.log(simpleInterest);
+//end-here
+});
