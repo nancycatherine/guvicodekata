@@ -1,0 +1,24 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+var A = userInput[0];
+function CheckLeapYear(year){
+    if(((year % 400 === 0) && (year % 100 !== 0)) || (year % 4 === 0)){
+        console.log("Y");
+    }
+    else{
+        console.log("N");
+    }
+}
+CheckLeapYear(A);
+//end-here
+});
