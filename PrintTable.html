@@ -1,0 +1,32 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+var input = parseInt(userInput[0]);
+var output = 0;
+function MathTable(inputVal){
+    if(inputVal === 0){
+        console.log("NULL");
+    }
+    else{
+        for(var i=1; i<=inputVal; i++){
+            output = output + (9 * i);
+            if(i != inputVal){
+                output = output + " ";
+            }
+            //console.log(output);
+        }
+        console.log(output);
+    }
+}
+MathTable(input);
+//end-here
+});
