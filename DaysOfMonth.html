@@ -1,0 +1,27 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+var month = parseInt(userInput[0]);
+var date = new Date();
+var year = date.getFullYear();
+function DaysCount(monthVal, yearVal){
+    if(monthVal !== 0 && monthVal<12){
+    let output = new Date(yearVal,monthVal,0).getDate();
+    console.log(output);
+    }else{
+        console.log("Error");
+    }
+    //console.log(date.getDate());
+}
+DaysCount(month,year);
+//end-here
+});
