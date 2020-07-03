@@ -1,0 +1,28 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+var var1 = "Parker"
+var var2 = "Kate"
+var var3 = "Unmarried"
+var var4 = "UnitedStates"
+var var5 = "25"
+console.log(var1,var2,var3,var4,var5);
+//end-here
+});
+
+
+Output:
+Parker Kate Unmarried UnitedStates 25
+Execution Time:
+0.07s
+Memory Used:
+8316kb
