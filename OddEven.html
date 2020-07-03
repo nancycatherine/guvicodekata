@@ -1,0 +1,29 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+var input = parseFloat(userInput[0]).toFixed(0);
+
+function CheckNumber(inputVal){
+    if(inputVal === 0){
+        return "Zero";
+    }
+    else if(inputVal % 2 === 0){
+        return "Even";
+    }
+    else{
+        return "Odd";
+    }
+}
+var output = CheckNumber(input);
+console.log(output);
+//end-here
+});
