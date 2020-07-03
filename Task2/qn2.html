@@ -1,0 +1,30 @@
+Input:
+8
+4
+
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+var a = userInput[0];
+var b = userInput[1];
+
+console.log("Before Swapping: ",a,b);
+[a,b] = [b,a];
+console.log("After Swapping: ",a,b)
+//end-here
+});
+
+
+Output:
+Before Swapping:  8 4
+After Swapping:  4 8
