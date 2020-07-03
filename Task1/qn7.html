@@ -1,0 +1,42 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+function CheckForTruthyAndFalsy(val){
+    if(val){
+        console.log("Truthy");
+    }
+    else{
+        console.log("Falsy");
+    }
+}
+CheckForTruthyAndFalsy(userInput[0]);
+//end-here
+});
+
+
+Output: 
+
+Truthy
+CheckForTruthyAndFalsy("hello");
+CheckForTruthyAndFalsy(true);
+CheckForTruthyAndFalsy(12);
+CheckForTruthyAndFalsy([]);
+CheckForTruthyAndFalsy({});
+CheckForTruthyAndFalsy(10.5);
+
+Falsy
+CheckForTruthyAndFalsy("");
+CheckForTruthyAndFalsy(false);
+CheckForTruthyAndFalsy(null);
+CheckForTruthyAndFalsy(0);
+CheckForTruthyAndFalsy(NaN);
+CheckForTruthyAndFalsy(undefined);
