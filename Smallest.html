@@ -1,0 +1,26 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+var input =  userInput[0].split(" ");
+var num1 = parseInt(input[0]);
+//console.log(num1)
+var num2 = parseInt(input[1]);
+var output = 0;
+if(num1 > num2){
+    output = num2;
+}
+else{
+    output = num1;
+}
+console.log(output);
+//end-here
+});
