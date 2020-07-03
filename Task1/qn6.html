@@ -1,0 +1,32 @@
+Input: 5
+
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+var var1 = parseInt(userInput[0]);
+var var2 = Number(userInput[0]);
+var var3 = +userInput[0];
+
+console.log(var1, var2, var3);
+console.log(typeof(var1));
+console.log(typeof(var2));
+console.log(typeof(var3));
+//end-here
+});
+
+
+Output:
+5 5 5
+number
+number
+number
