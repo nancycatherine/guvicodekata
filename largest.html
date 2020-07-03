@@ -1,0 +1,24 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+
+var largest = userInput[0];
+//console.log(userInput.length)
+
+for (var i = 0; i < userInput.length; i++) {
+    if (largest < userInput[i] ) {
+        largest = userInput[i];
+    }
+}
+console.log(largest);
+//end-here
+});
