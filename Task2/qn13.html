@@ -1,0 +1,23 @@
+Input:
+3
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+  inp.on("line", (data) => {
+  userInput.push(data);
+});
+inp.on("close", () => {
+  //console.log(userInput);
+  //Volume Of Sphere  =>  (4/3)*pi*r*r*r
+  var r = userInput[0];
+  var volume = (4/3)*3.14*(Math.pow(r,3));
+  
+  console.log(volume);
+});
+
+
+Output:
+113.03999999999999
