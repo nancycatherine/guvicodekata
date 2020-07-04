@@ -1,0 +1,24 @@
+Input:
+4
+
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+  inp.on("line", (data) => {
+  userInput.push(data);
+});
+inp.on("close", () => {
+  //console.log(userInput);
+  //Area of equilateral triangle = (sqrt(3)/4)*a*a
+  var a = userInput[0];
+  var area = (Math.sqrt(3)/4)*a*a;
+  
+  console.log(area);
+});
+
+
+Output:
+6.928203230275509
