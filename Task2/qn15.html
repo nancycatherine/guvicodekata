@@ -1,0 +1,26 @@
+Input:
+3
+6
+
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+  inp.on("line", (data) => {
+  userInput.push(data);
+});
+inp.on("close", () => {
+  //console.log(userInput);
+  //Area of triangle => (1/2)*b * h
+  var b = userInput[0];
+  var h = userInput[1];
+  var volume = (1/2)*b * h;
+  
+  console.log(volume);
+});
+
+
+Output:
+9
