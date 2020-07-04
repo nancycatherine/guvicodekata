@@ -1,0 +1,28 @@
+Input:
+5500
+3
+8
+
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+  inp.on("line", (data) => {
+  userInput.push(data);
+});
+inp.on("close", () => {
+  //console.log(userInput);
+  //Simple Interest = (Prinicipal Amount * Number of years * Rate of interest) / 100
+  var p = userInput[0];
+  var n = userInput[1];
+  var r = userInput[2];
+  var simpleInterest = (p*n*r)/100
+  
+  console.log(simpleInterest);
+});
+
+
+Output:
+1320
