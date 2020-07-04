@@ -1,0 +1,25 @@
+Input:
+522
+27
+
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+  inp.on("line", (data) => {
+  userInput.push(data);
+});
+inp.on("close", () => {
+  //console.log(userInput);
+  //Batting Average = Runs Scored / Times Out
+  var runs = +userInput[0];
+  var timesOut = +userInput[1];
+  var battingAverage = runs/timesOut;
+  console.log(battingAverage);
+});
+
+
+Output:
+19.333333333333332
