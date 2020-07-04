@@ -1,0 +1,19 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+  inp.on("line", (data) => {
+  userInput.push(data);
+});
+inp.on("close", () => {
+  //console.log(userInput);
+  //Meters to Miles  =>  mi=m*0.00062137
+  var input = +userInput[0];
+  var ouput = input*0.00062137;
+  console.log(ouput);
+});
+
+
+Output:
+0.00124274
