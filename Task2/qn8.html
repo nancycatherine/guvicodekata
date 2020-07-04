@@ -1,0 +1,26 @@
+Input:
+50
+27
+60
+80
+95
+
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+  inp.on("line", (data) => {
+  userInput.push(data);
+});
+inp.on("close", () => {
+  //console.log(userInput);
+  //TestScore Average = score1+score2+score3+score4+score5/5
+  var scoreAverage = [(+userInput[0])+(+userInput[1])+ (+userInput[2])+ (+userInput[3])+ (+userInput[4])] / 5;
+  console.log(scoreAverage);
+});
+
+
+Output:
+62.4
