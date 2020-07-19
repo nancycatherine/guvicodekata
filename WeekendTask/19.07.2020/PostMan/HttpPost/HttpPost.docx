@@ -1,0 +1,15 @@
+Sample Url:    http://dummy.restapiexample.com/api/v1/create
+**************************************************************************************************************
+ 
+ Response:
+ *********
+ 
+ {
+    "status": "success",
+    "data": {
+        "name": null,
+        "salary": null,
+        "age": null,
+        "id": 36
+    }
+}
