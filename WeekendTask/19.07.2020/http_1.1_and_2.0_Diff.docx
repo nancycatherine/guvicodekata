@@ -1,0 +1,22 @@
+Hypertext Transfer Protocol (HTTP) is an application protocol that is, currently, the foundation of data communication for the World Wide Web.
+
+HTTP is based on the Client/Server model. Client/Server model can be explained as two computers, Client (receiver of service) and 
+Server (provider of service) that are communicating via requests and responses.
+
+Http/1.1
+----------------------------------------------------------------------------------------------------------------------------------------------------
+* HTTP/1.1, the first standardized version of HTTP, was introduced in 1997
+* The third version of HTTP and the standard protocol for over 15 years. 
+* It introduced persistent connections for improved performance and laid the foundation for standard requests, such as GET, HEAD, PUT, and POST.
+
+Http/2.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+* In 2015, Internet Engineering Task Force (IETF) release HTTP/2, the second major version of the most useful internet protocol, HTTP. 
+  It was derived from the earlier experimental SPDY protocol.
+* HTTP/2 (originally named HTTP/2.0) is a major revision of the HTTP network protocol used by the World Wide Web.
+* It achieves faster webpage loading without performance optimizations that require extensive human efforts in terms of development.
+* HTTP 2.0 is a binary protocol that multiplexes numerous streams going over a single (normally TLS-encrypted) TCP connection.
+
+
+
+
