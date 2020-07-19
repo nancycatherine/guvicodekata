@@ -1,0 +1,30 @@
+The Hypertext Transfer Protocol (HTTP) is designed to enable communications between clients and servers.
+HTTP works as a request-response protocol between a client and server.
+
+HTTP Methods
+************
+GET
+POST
+PUT
+HEAD
+DELETE
+PATCH
+OPTIONS
+
+
+HttpGet
+********************************************************************************************************************************************
+- GET requests include all required data in the URL.
+- Parameters remain in browser history because they are part of the URL.
+- GET requests are re-executed but may not be re-submitted to server if the HTML is stored in the browser cache.
+- GET is less secure compared to POST because data sent is part of the URL. So it's saved in browser history and server logs in plaintext.
+- GET method is visible to everyone (it will be displayed in the browser's address bar) and has limits on the amount of information to send.
+- GET method should not be used when sending passwords or other sensitive information.
+
+HttpPost
+********************************************************************************************************************************************
+- Parameters are not saved in browser history.
+- The browser usually alerts the user that data will need to be re-submitted.
+- POST is a little safer than GET because the parameters are not stored in browser history or in web server logs.
+- POST method variables are not displayed in the URL.
+- POST method used when sending passwords or other sensitive information.
