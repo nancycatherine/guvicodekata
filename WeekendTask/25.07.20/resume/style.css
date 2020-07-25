@@ -1,0 +1,28 @@
+myResume: Css content
+-----------------------------------------------------------------------
+
+h1{
+   text-align: center;
+    color: #decdd8;
+}
+body{
+    font-family: cursive;
+    background-color: #c5c5bc;
+    //font-weight: bold;
+}
+.highlighter{
+font-weight: bold;
+}
+.position{
+text-align: right;
+}
+header{
+  background-color: #7e7d80;
+font-weight: bold;
+}
+footer{
+    text-align: center;
+    font-weight: bold;
+  background-color: #7e7d80;
+color: #decdd8;
+}
