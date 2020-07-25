@@ -1,0 +1,27 @@
+Heroku - Instead of json-server of nodejs , we use heroku server for application hosting.
+-------------------------------------------------------------------------------------------
+
+Git Application hosted in heroku
+*************************************
+https://my-jsonserver.herokuapp.com/   ---  my-jsonserver is the application which was created by me.
+*************************************
+
+
+
+Commands:
+---------
+
+heroku login
+heroku create my-jsonserver (create app)
+git rev-parse --show-toplevel (find root folder)
+git remote -v
+
+//heroku git:clone -a my-jsonserver
+//cd my-jsonserver
+
+$git add . $ git commit -am "make it better" $ git push heroku master
+git push  https://git.heroku.com/my-jsonserver.git (worked)
+
+heroku git:remote -a my-jsonserver (worked)
+heroku open (worked)
+
