@@ -12,7 +12,7 @@ if(cityId !== undefined && cityId !== ""){
 keys.id=cityId;
 cityName="";
 }
-keys.appid = "54c00f5acd594523695e4d9302ab4fc6";
+keys.appid = "54c00f5acd594523695e4d9302ab4fc6"; // This API key was created by me, which has a validity period of 60 days.
 
 url = frameURL(url,keys);
 // XML http request call
