@@ -1,0 +1,50 @@
+<html>
+  <head>
+     <link rel="stylesheet" href="task1b.css" type="text/css"></script>
+  </head>
+<body>
+<header>
+  <h1>Objects and it's internal representation..</h1><br>
+</header><br>
+  <div class="highlighter">Objects:</div>
+  <div>
+   <p>
+   Objects plays a vital role in the programming languages. JS objects are containers for
+named values called properties or methods.The data types are of 2 types<br>in Javascript
+which can be listed as,</p>
+<ul>
+   <li>Primitive Data Type (Eg: string, number, boolean, null etc)</li>
+   <li>Composite Data Type (Eg: object)</li>
+</ul><br>
+
+<p class="highlighter">Primitve data types can store only single value whereas objects can store multiple
+values of primitva data in it.</p>
+<p class="highlighter">Primitive data types are of copy by value and compositive data types are copy by
+reference.</p> <br>
+<div class="highlighter">Note:</div>
+<ul>
+<li>Array is an object in JS (which internally stores the values as a json object).</li>
+<li>Array is indexed based on the index number whereas Json object entries are 
+identified based on the key. </li>
+</ul> <br>    
+<div>
+<div class="highlighter">Example 1: COPY BY VALUE</div><br>
+var a = 10;<br>
+var b = a;<br>
+var b = 20;<br>
+console.log(a)//gives 10 ->copy by value
+</div><br><br>
+<div>
+<div class="highlighter">Example 2: COPY BY REFERENCE</div><br>
+var arr = [1];<br>
+var arr1 = arr;<br>
+arr1[0]= 4;<br>
+console.log(arr)//gives 4 ->copy by reference<br><br>
+</div>
+</div>
+<footer>&copy; Copyright2020 ~ By Nancy
+</footer>
+</body>
+</html>
+
+
