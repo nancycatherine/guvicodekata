@@ -1,0 +1,50 @@
+<html>
+  <head>
+     <link rel="stylesheet" href="task1b.css" type="text/css"></script>
+  </head>
+<body>
+<header>
+  <h1>Enterprise Javascript Error Handling..</h1><br>
+</header><br>
+  
+ <p>
+   Nicholas C. Zakas is a Web Software Engineer who specializes in user interface design and implementation for Web applications using JavaScript, Dynamic HTML, CSS, XML, and XSLT. <br>He is currently principal front end engineer for the Yahoo! homepage and is a contributor to the Yahoo! User Interface (YUI) library, having written the Cookie Utility, Profiler, and YUI Test.
+He is the author of Professional JavaScript for Web Developers and a co-author on Professional Ajax, and has contributed to other books. 
+</p>
+<div>What do users see when there's a Javascript error on webpage?
+</div>
+<div class="highlighter">"Nothing!"</div><br>
+<div>As a programmer, we need to follow certain rules which are listed below,</div>
+<ul>
+<li>Assume your code will fail</li>
+<li>Log errors to the server</li>
+<li>You, not the browser, handle errors
+<ul><li>try-catch</li>
+<li>window.onerror</li></ul>
+</li>
+<li>Identify where errors might occur
+<ul><li>Type coercion errors</li>
+<li>Data type errors</li>
+<li>Communication errors</li>
+</ul>
+</li><br>
+
+<img src="C:\Users\691707\Documents\Nancy\Guvi\sampleprogram\01Aug20\commErr.png" width="800" height="400"></img><br><br>
+<li>Throw your own errors
+<ul><li>Errors should be thrown in the low-level parts of the application</li>
+<li>Use try-catch blocks in higher level parts.</li>
+</ul>
+</li><br>
+<li>Distinguish fatal vs non-fatal</li>
+<img src="C:\Users\691707\Documents\Nancy\Guvi\sampleprogram\01Aug20\fatalErr.png" width="800" height="400"></img><br><br>
+<img src="C:\Users\691707\Documents\Nancy\Guvi\sampleprogram\01Aug20\nonFatalErr.png" width="800" height="400"></img><br><br>
+<li>Provide a debug mode
+<ul><li>Assign a variable that is globally available</li>
+<li>try-catch should re-throw the error</li>
+<li>window.onerror should return false</li>
+<li>Allow the browser to handle the error</li>
+</ul></li></ul><br><br>
+<footer>&copy; Copyright2020 ~ By Nancy
+</footer>
+</body>
+</html>
